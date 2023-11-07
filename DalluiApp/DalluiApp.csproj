@@ -49,7 +49,35 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Nexa-ExtraLight.ttf" />
+	  <None Remove="Resources\Fonts\Nexa-Heavy.ttf" />
+	  <None Remove="Resources\Images\anime.jpg" />
+	  <None Remove="Resources\Images\cartoon.jpg" />
+	  <None Remove="Resources\Images\dashboard1.jpg" />
+	  <None Remove="Resources\Images\dashboard2.jpg" />
+	  <None Remove="Resources\Images\dashboard3.jpg" />
+	  <None Remove="Resources\Images\funko.jpg" />
+	  <None Remove="Resources\Images\isometric.jpg" />
+	  <None Remove="Resources\Images\minimalism.jpg" />
+	  <None Remove="Resources\Images\popart.jpg" />
+	  <None Remove="Resources\Images\profile1.jpg" />
+	  <None Remove="Resources\Images\profile2.jpg" />
+	  <None Remove="Resources\Images\profile3.jpg" />
+	  <None Remove="Resources\Images\profilesquare.jpg" />
+	  <None Remove="Resources\Images\realistic.jpg" />
+	  <None Remove="Resources\Images\storybook.jpg" />
+	  <None Remove="Resources\Images\surrealism.jpg" />
+	  <None Remove="Resources\Images\watercolor.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\DashboardView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
