@@ -70,6 +70,22 @@
                             <Image Source="{Binding ProfileImage}"
                                    HeightRequest="50"/>
                         </Border>
+                        <VerticalStackLayout Grid.Column="1"
+                                             VerticalOptions="Center">
+                            <Label Margin="10,0,0,0"
+                                   FontFamily="NexaHeavy"
+                                   HorizontalTextAlignment="Start"
+                                   Text="{Binding Name}"
+                                   TextColor="White"
+                                   VerticalTextAlignment="Center"/>
+                            <Label Grid.Column="1"
+                                   Margin="10,0,0,0"
+                                   FontFamily="NexaHeavy"
+                                   Text="{Binding NoPhotos, StringFormat='{0} pictures'}"
+                                   FontSize="12"
+                                   TextColor="#869CBD"
+                                   VerticalOptions="Start"/>
+                        </VerticalStackLayout>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
