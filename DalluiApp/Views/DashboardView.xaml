@@ -28,10 +28,10 @@
                 WidthRequest="75">
                 <Image
                     Aspect="AspectFill"
-                    HeightRequest="100"
+                    HeightRequest="75"
                     HorizontalOptions="Center"
                     Source="profilesquare.jpg"
-                    WidthRequest="100" />
+                    WidthRequest="75" />
             </Border>
         </Grid>
         <VerticalStackLayout Grid.Row="1" VerticalOptions="Center">
