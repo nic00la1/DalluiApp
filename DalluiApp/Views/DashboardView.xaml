@@ -46,8 +46,23 @@
                    FontFamily="NexaHeavy"/>
         </VerticalStackLayout>
         <CollectionView Grid.Row="2"
-                        ItemsSource="{Binding Profiles}">
-            
+                        ItemsSource="{Binding Profiles}"
+                        VerticalOptions="Center">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout ItemSpacing="10" Orientation="Horizontal"/>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions=".35*, .65*"
+                          HeightRequest="60"
+                          WidthRequest="160">
+                        <RoundRectangle Grid.ColumnSpan="2"
+                                        CornerRadius="45"
+                                        Fill="#1f252A"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
         </CollectionView>
     </Grid>
 
