@@ -3,10 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
              xmlns:proc="clr-namespace:PanCardView.Processors;assembly=PanCardView"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DalluiApp.Views.DashboardView"
              Title="DashboardView"
              BackgroundColor="#101216">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <toolkit:ListToStringConverter x:Key="ListToStringConverter" Separator=","/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
  <Grid Margin="25,25,0,0" RowDefinitions=".1*,.2*,.15*,.45*,.1*">
         <Grid Margin="0,0,25,0" ColumnDefinitions="*,*">
             <VerticalStackLayout VerticalOptions="Center">
@@ -120,7 +127,7 @@
                                            TextColor="White"/>
                                     <Label FontFamily="NexaLight"
                                            FontSize="15"
-                                           Text="{Binding Keywords}"
+                                           Text="{Binding Keywords, Converter={StaticResource ListToStringConverter}}"
                                            TextColor="white"/>
                                 </VerticalStackLayout>
                             </Grid>
@@ -129,6 +136,9 @@
                 </DataTemplate>
             </cards:CoverFlowView.ItemTemplate>
         </cards:CoverFlowView>
+     
+     <Border
+     
     </Grid>
 
 
