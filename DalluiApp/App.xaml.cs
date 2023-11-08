@@ -8,7 +8,7 @@ namespace DalluiApp
         {
             InitializeComponent();
 
-            MainPage = new DashboardView();
+            MainPage = new GenerationOptionsView();
         }
     }
 }
