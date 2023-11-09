@@ -64,8 +64,14 @@
                                Text="{Binding Name}"
                                HorizontalTextAlignment="Center"
                                TextColor="White"
-                               VerticalOptions="End"/>
-                        
+                               VerticalOptions="End">
+                            <Label.Shadow>
+                                <Shadow Brush="Black"
+                                        Opacity="1"
+                                        Radius="1"
+                                        Offset="5,5"/>
+                            </Label.Shadow>
+                        </Label>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
