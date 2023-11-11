@@ -27,5 +27,8 @@ public partial class ImageGeneratorView : ContentPage
             borderTime.ScaleTo(1, 1000),
             borderTime.FadeTo(1, 1000)
             );
+
+		await borderTime.FadeTo(0, 300);
+		await btnFinish.ScaleTo(1, 1000);
 	}
 }
