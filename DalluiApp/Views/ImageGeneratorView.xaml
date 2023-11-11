@@ -51,7 +51,7 @@
     Grid.Row="1"
                 BackgroundColor="#E8FF8E"
                 Opacity=".9"
-        IsVisible="True"
+        IsVisible="False"
         StrokeShape="RoundRectangle 20,20,20,20"
         StrokeThickness="0">
         </Border>

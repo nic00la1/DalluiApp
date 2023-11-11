@@ -14,9 +14,12 @@ public partial class ImageGeneratorView : ContentPage
 
 	private async void StopGeneration()
 	{
+		await Task.Delay(2000);
+
 		lottie.IsAnimationEnabled = false;
 		lottie.IsVisible = false;
 		imageBorder.IsVisible = true;
+		imageAnimation.IsVisible = true;
 
 		await Task.WhenAny(
 			imageAnimation.ScaleTo(1.1, 1000),
