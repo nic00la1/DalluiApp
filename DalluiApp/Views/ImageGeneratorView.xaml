@@ -25,6 +25,14 @@
                 StrokeThickness="0">
             <Image Aspect="AspectFill" Source="cartoon.jpg"/>
         </Border>
+        <Border x:Name="imageAnimation"
+    Grid.Row="1"
+                BackgroundColor="#E8FF8E"
+                Opacity=".9"
+        IsVisible="True"
+        StrokeShape="RoundRectangle 20,20,20,20"
+        StrokeThickness="0">
+        </Border>
         <skia:SKLottieView
             x:Name="lottie"
             Grid.Row="1"
