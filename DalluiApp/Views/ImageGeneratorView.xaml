@@ -23,7 +23,7 @@
                             Grid.Row="1"
                             BackgroundColor="#e8ff8e"
                             IsVisible="True"
-                            Opacity="1"
+                            Opacity="0"
                             Scale="1.1"
                             StrokeShape="RoundRectangle 5,5,5,5"
                             StrokeThickness="0">
