@@ -68,12 +68,14 @@
 	  <None Remove="Resources\Images\storybook.jpg" />
 	  <None Remove="Resources\Images\surrealism.jpg" />
 	  <None Remove="Resources\Images\watercolor.jpg" />
+	  <None Remove="Resources\Raw\robot.json" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CardsView.Maui" Version="0.0.4" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.86" />
 	</ItemGroup>
 
 	<ItemGroup>

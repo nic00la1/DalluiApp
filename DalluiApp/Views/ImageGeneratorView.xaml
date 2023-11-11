@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DalluiApp.Views.ImageGeneratorView"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              Title="ImageGeneratorView"
              Background="#101216">
 
@@ -18,10 +19,16 @@
                 TextColor="#ACB1BB"/>
         </VerticalStackLayout>
         <Border Grid.Row="1"
+                IsVisible="False"
                 StrokeShape="RoundRectangle 20,20,20,20"
                 StrokeThickness="0">
             <Image Aspect="AspectFill" Source="cartoon.jpg"/>
         </Border>
+        <skia:SKLottieView
+            Grid.Row="1"
+            IsAnimationEnabled="True"
+            RepeatCount="-1"
+            Source="robot.json"/>
         <Button Grid.Row="2"
                 BackgroundColor="#e8ff8e"
                 CornerRadius="35"
